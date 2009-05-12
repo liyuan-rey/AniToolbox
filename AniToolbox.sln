@@ -1,0 +1,33 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AniToolbox", "AniToolbox.vcproj", "{770AEBA2-2CC1-4449-B78F-D3DF32449886}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
+	EndGlobalSection
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccLocalPath0 = .
+		CanCheckoutShared = false
+		SolutionUniqueID = {D7ECFF3E-0F5F-4901-8651-E6DA4CDDD42C}
+		SccProjectUniqueName1 = AniToolbox.vcproj
+		SccLocalPath1 = .
+		CanCheckoutShared = false
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{770AEBA2-2CC1-4449-B78F-D3DF32449886}.Debug.ActiveCfg = Debug|Win32
+		{770AEBA2-2CC1-4449-B78F-D3DF32449886}.Debug.Build.0 = Debug|Win32
+		{770AEBA2-2CC1-4449-B78F-D3DF32449886}.Release.ActiveCfg = Release|Win32
+		{770AEBA2-2CC1-4449-B78F-D3DF32449886}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

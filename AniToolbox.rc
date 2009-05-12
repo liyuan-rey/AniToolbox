@@ -1,0 +1,222 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "1 TYPELIB ""AniToolbox.tlb""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "InternalName", "AniToolbox.dll"
+            VALUE "OriginalFilename", "AniToolbox.dll"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_ANITOOLBOX          REGISTRY                "AniToolbox.rgs"
+IDR_REGSVRPLUS          REGISTRY                "RegSvrPlus.rgs"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_REGISTER            BITMAP                  "Register.bmp"
+IDB_UNREGISTER          BITMAP                  "Unregister.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_REGSVRPLUSDLG DIALOGEX 0, 0, 312, 211
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "AniToolbox - RegSvrPlus"
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_LST_FILES,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | 
+                    WS_BORDER | WS_TABSTOP,7,7,298,94
+    CONTROL         "简洁模式(&S) <<",IDC_CHK_VIEWMODE,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,7,107,69,16
+    CONTROL         "注册(&R)",IDC_OPT_REGIST,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,131,111,44,10
+    CONTROL         "取消注册(&U)",IDC_OPT_UNREGIST,"Button",
+                    BS_AUTORADIOBUTTON,185,111,60,10
+    DEFPUSHBUTTON   "执行(&D)",IDC_BTN_PERFORM,255,107,50,16,WS_GROUP
+    CONTROL         "",IDC_PLACEHOLDER,"Static",SS_BLACKFRAME | NOT 
+                    WS_VISIBLE,7,129,298,75
+END
+
+IDD_PROPPAGE_RESULT DIALOGEX 0, 0, 195, 127
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "操作结果"
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    LTEXT           "TODO: 布局属性页",IDC_STATIC,53,59,90,8
+END
+
+IDD_PROPPAGE_OPTIONS DIALOGEX 0, 0, 195, 127
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "控制选项"
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    LTEXT           "TODO: 布局属性页",IDC_STATIC,53,59,90,8
+END
+
+IDD_PROPPAGE_ACTION DIALOGEX 0, 0, 195, 127
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "操作选项"
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    LTEXT           "TODO: 布局属性页",IDC_STATIC,53,59,90,8
+END
+
+IDD_PROPPAGE_ABOUT DIALOGEX 0, 0, 195, 127
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "关于..."
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    LTEXT           "TODO: 布局属性页",IDC_STATIC,53,59,90,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_REGSVRPLUSDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 305
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 204
+        HORZGUIDE, 107
+        HORZGUIDE, 129
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_REGSVRPLUS          ICON                    "RegSvrPlus.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_PROJNAME            "AniToolbox"
+    IDS_MITEXT_REGISTER     "注册组件(&R)..."
+    IDS_MITEXT_UNREGISTER   "取消注册组件(&U)..."
+    IDS_MIPROMPT_REGISTER   "注册所有选中的 COM 组件"
+    IDS_MIPROMPT_UNREGISTER "取消注册所有选中的 COM 组件"
+    IDS_MIVERB_REGISTER     "RegSvrPlus"
+    IDS_MIVERB_UNREGISTER   "UnregSvrPlus"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1 TYPELIB "AniToolbox.tlb"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,37 @@
+HKCR
+{
+	AniToolbox.RegSvrPlus.1 = s 'RegSvrPlus Class'
+	{
+		CLSID = s '{2B00521B-1F6D-4A9A-938E-4A1518D531EC}'
+	}
+	AniToolbox.RegSvrPlus = s 'RegSvrPlus Class'
+	{
+		CLSID = s '{2B00521B-1F6D-4A9A-938E-4A1518D531EC}'
+		CurVer = s 'AniToolbox.RegSvrPlus.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {2B00521B-1F6D-4A9A-938E-4A1518D531EC} = s 'RegSvrPlus Class'
+		{
+			ProgID = s 'AniToolbox.RegSvrPlus.1'
+			VersionIndependentProgID = s 'AniToolbox.RegSvrPlus'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{0700AA22-76B6-40F7-91AB-9D9F7DF1C2A5}'
+		}
+	}
+    NoRemove dllfile
+    {
+        NoRemove shellex
+        {
+            NoRemove ContextMenuHandlers
+            {
+                ForceRemove DLLRegSvr = s '{2B00521B-1F6D-4A9A-938E-4A1518D531EC}'
+            }
+        }
+    }
+}

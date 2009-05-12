@@ -1,0 +1,36 @@
+// AniToolbox.idl : AniToolbox 的 IDL 源
+//
+
+// 此文件将由 MIDL 工具处理以
+// 产生类型库(AniToolbox.tlb)和封送处理代码。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(449E6F51-AADC-4691-8719-1B37F001E80A),
+	dual,
+	nonextensible,
+	helpstring("IRegSvrPlus 接口"),
+	pointer_default(unique)
+]
+interface IRegSvrPlus : IDispatch{
+};
+[
+	uuid(0700AA22-76B6-40F7-91AB-9D9F7DF1C2A5),
+	version(1.0),
+	helpstring("AniToolbox 1.0 类型库")
+]
+library AniToolboxLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(2B00521B-1F6D-4A9A-938E-4A1518D531EC),
+		helpstring("RegSvrPlus Class")
+	]
+	coclass RegSvrPlus
+	{
+		[default] interface IRegSvrPlus;
+	};
+};
